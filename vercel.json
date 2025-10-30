@@ -1,9 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/create-preference.js", "use": "@vercel/node" }
+    {
+      "src": "api/create-preference.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/create-preference", "dest": "/api/create-preference.js" }
+    {
+      "src": "/api/create-preference",
+      "dest": "/api/create-preference.js"
+    }
   ]
 }
