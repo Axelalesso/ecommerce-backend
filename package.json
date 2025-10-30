@@ -1,8 +1,15 @@
 {
-  "name": "ecommerce-backend",
-  "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "mercadopago": "^2.9.0"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/create-preference.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/create-preference",
+      "dest": "/api/create-preference.js"
+    }
+  ]
 }
